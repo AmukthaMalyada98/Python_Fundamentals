@@ -1,0 +1,325 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Introduction to for loops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_friends = ['Swetha','Amuktha','Madhu','SaiSri','Naziya']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Swetha', 'Amuktha', 'Madhu', 'SaiSri', 'Naziya']\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_friends)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Req"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Good work, Swetha\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\" Good work, {my_friends[0]}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Good work, Amuktha\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\" Good work, {my_friends[1]}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Good work, Madhu\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\" Good work, {my_friends[2]}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Implementation of for loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good work,Swetha\n",
+      "Good work,Amuktha\n",
+      "Good work,Madhu\n",
+      "Good work,SaiSri\n",
+      "Good work,Naziya\n"
+     ]
+    }
+   ],
+   "source": [
+    " for friends in my_friends:\n",
+    "        print(f\"Good work,{friends}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#General Syntax of a for loop:\n",
+    "\n",
+    " for tempvar in mainvar:\n",
+    "        print(tempvar)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Swetha\n",
+      "Amuktha\n",
+      "Madhu\n",
+      "SaiSri\n",
+      "Naziya\n"
+     ]
+    }
+   ],
+   "source": [
+    "for x in my_friends:\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good work,Swetha\n",
+      "Good work,Amuktha\n",
+      "Good work,Madhu\n",
+      "Good work,SaiSri\n",
+      "Good work,Naziya\n"
+     ]
+    }
+   ],
+   "source": [
+    " for x in my_friends:\n",
+    "        print(f\"Good work,{x}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good work,Swetha\n",
+      "Welcome to our College,Swetha\n",
+      "Good work,Amuktha\n",
+      "Welcome to our College,Amuktha\n",
+      "Good work,Madhu\n",
+      "Welcome to our College,Madhu\n",
+      "Good work,SaiSri\n",
+      "Welcome to our College,SaiSri\n",
+      "Good work,Naziya\n",
+      "Welcome to our College,Naziya\n"
+     ]
+    }
+   ],
+   "source": [
+    " for friends in my_friends:\n",
+    "        print(f\"Good work,{friends}\")\n",
+    "        print(f\"Welcome to our College,{friends}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good work,Swetha\n",
+      "Welcome to our College,Swetha\n",
+      "\n",
+      "Good work,Amuktha\n",
+      "Welcome to our College,Amuktha\n",
+      "\n",
+      "Good work,Madhu\n",
+      "Welcome to our College,Madhu\n",
+      "\n",
+      "Good work,SaiSri\n",
+      "Welcome to our College,SaiSri\n",
+      "\n",
+      "Good work,Naziya\n",
+      "Welcome to our College,Naziya\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    " for friends in my_friends:\n",
+    "        print(f\"Good work,{friends}\")\n",
+    "        print(f\"Welcome to our College,{friends}\\n\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Good work,Swetha\n",
+      "Welcome to our College,Swetha\n",
+      "\n",
+      "Good work,Amuktha\n",
+      "Welcome to our College,Amuktha\n",
+      "\n",
+      "Good work,Madhu\n",
+      "Welcome to our College,Madhu\n",
+      "\n",
+      "Good work,SaiSri\n",
+      "Welcome to our College,SaiSri\n",
+      "\n",
+      "Good work,Naziya\n",
+      "Welcome to our College,Naziya\n",
+      "\n",
+      "Thank you for comming \n"
+     ]
+    }
+   ],
+   "source": [
+    " for friends in my_friends:\n",
+    "        print(f\"Good work,{friends}\")\n",
+    "        print(f\"Welcome to our College,{friends}\\n\")\n",
+    "        \n",
+    "print(\"Thank you for comming \")#printing out"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
